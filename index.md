@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+### COVID-19 Document Clustering
 
-You can use the [editor on GitHub](https://github.com/anishathakrar/COVID-19-Document-Clustering/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+With the increase in number of COVID-19 cases, it is difficult to keep up with new information on the virus. This requires proper organization of documents and hence defining a procedure to organize literature related to COVID-19 using machine learning algorithms in order to group similar papers is important.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The dataset was collected from a publicly available COVID-19 Open Research Dataset Challenge on Kaggle. This is a resource of over 500,000 scholarly articles, including over 200,000 with full text, about COVID-19, SARS-CoV-2, and related coronaviruses. It is associated with bibliographic features like title, abstract, author, publication date, etc. Since the dataset is extremely large, 10,000 random samples have been considered to save computational resources.
 
-### Markdown
+Steps taken are:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Use pool of raw data to extract useful information by means of natural language processing techniques and unsupervised machine learning algorithms.
+Create clusters to group papers based on similarity.
+Discover the underlying topic in each generated cluster via topic modeling.
+Use a combination of dimensionality reduction and clustering techniques to achieve goal of easy access to every paper.
+Labeled clusters are derived using a combination of dimensionality reduction and clustering techniques such as PCA, TSNE, K-Means and LDA.
+Future work:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anishathakrar/COVID-19-Document-Clustering/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+We can implement DBSCAN algorithm and compare the results for K-Means and DBSCAN.
+We can also include papers from all languages. This gives us an experience from different geographic locations in dealing with COVID-19.
+As a part of dimensionality reduction, we can use the ensemble of PCA and manifold learning. This captures the linear, nonlinear, local and global features in the original dataset.
+Incorporating keyword search with document clustering will make it more efficient and less time consuming.
